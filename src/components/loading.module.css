@@ -1,0 +1,28 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #e0e0e0;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  animation: rotation 1.5s linear infinite;
+}
+.loader div {
+  display: none; /* You can add more styles here if you want to add extra elements */
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
